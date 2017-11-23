@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Registration page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<script type="text/javascript" charset=UTF-8>
+    function checkForm(form) {
+        var e = 0;
+        for (var i = 0; i < form.length-1; i++) {
+            if (!form[i].value.replace(/^\s+|\s+$/g, '')){
+                form[i].style.border='1px solid red';
+                e = 1;
+            }
+        }
+        if(e) {
+            alert ('Fill in all the fields');
+            return false;
+        }
+    }
+</script>
+
+<form action="register.do" method="post" onsubmit="return checkForm(this.elements)">
+    <div class="menu">
+        <a href="index.html">Home</a>
+    </div>
+    <br>
+    <h1>MY<span style="color: #e6b800">SITE</span></h1>
+
+    &nbsp;<input type="text" title="fullname" placeholder="Full name" name="fullname" min="1"/>
+    <br><br>
+    &nbsp;<input type="email" title="email" placeholder="Email" name="email" min="1" />
+    <br><br>
+    &nbsp;<input type="text" title="username" placeholder="Username" name="username"/>
+    <br><br>
+    &nbsp;<input type="password" title="password" placeholder="Password" name="password" id="password1"/>
+    <br><br>
+    &nbsp;<input type="password" title="passVerification" placeholder="Repeated password" name="passVerification"
+                 id="passVerification"/>
+    &nbsp;<p><input type="submit" id="submit_button" value="SEND"/></p>
+
+</form>
+</body>
+</html>
