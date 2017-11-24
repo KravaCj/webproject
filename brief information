@@ -8,7 +8,7 @@ mysql @ localhost
 3) Re-maven the project (clear + install).
 
 4) Connect apache-tomcat-9.0.1! (For an idea: Edit Configurations -> add -> Tomcat Server ->
-Local). Next, select Tomcat 9.0.1 (which is in the folder "localtest"). In the section: (Deployment ->
+Local). Next, select Tomcat 9.0.1. In the section: (Deployment ->
 External sourse), add our wizard: (webproject -> target -> webproject ... war).
 
 5) Run, if there are any problems, check the connection settings to the database in
