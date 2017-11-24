@@ -1,8 +1,7 @@
 how to start:
 1) Run the maven project (a folder called "webproject").
 
-2) We connect the MySQL database, the jar file is located in the external folder "Igor Kravchenko (web-
-project) "ie add jar to Classpath (if idea then File -> Project Structure -> SDKs and
+2) We connect the MySQL database, add jar to Classpath (if idea then File -> Project Structure -> SDKs and
 section Classpath). Next we add the database with the name mysql. As a result, we get
 mysql @ localhost
 
@@ -13,7 +12,7 @@ Local). Next, select Tomcat 9.0.1 (which is in the folder "localtest"). In the s
 External sourse), add our wizard: (webproject -> target -> webproject ... war).
 
 5) Run, if there are any problems, check the connection settings to the database in
-packages: com.pfsoft.connection.ConnectionToDB.class
+packages: com.mysite.connection.ConnectionToDB.class
 
 6) Tables in the database are created automatically when the program starts.
 
