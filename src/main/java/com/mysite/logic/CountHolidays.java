@@ -46,7 +46,7 @@ public class CountHolidays {
         }
 
         return freeDays;
-    }gi
+    }
 
     private static void loadHolidaysToCollection() throws SQLException {
 
