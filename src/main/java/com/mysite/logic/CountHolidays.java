@@ -46,9 +46,7 @@ public class CountHolidays {
         }
 
         return freeDays;
-    }
-
-    //TODO: test2
+    }gi
 
     private static void loadHolidaysToCollection() throws SQLException {
 
