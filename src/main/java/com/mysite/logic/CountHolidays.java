@@ -48,6 +48,8 @@ public class CountHolidays {
         return freeDays;
     }
 
+    //TODO: test2
+
     private static void loadHolidaysToCollection() throws SQLException {
 
         Connection cnDB = null;
